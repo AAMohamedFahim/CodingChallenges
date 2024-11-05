@@ -9,16 +9,15 @@ def food_order():
             break
         else:
             if order < 4 and order > 0:
-                match order:
-                    case 1:
+                if order == 1:
                         quantity = int(input("quant : "))
                         purse = purse + (200*quantity)
                         count = count + quantity
-                    case 2:
+                elif order == 2:
                         quantity = int(input("quant : "))
                         purse = purse + (180*quantity)
                         count = count + quantity
-                    case 3:
+                if order == 3:
                         quantity = int(input("quant : "))
                         purse = purse + (50*quantity)
                         count = count + quantity
